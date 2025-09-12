@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Prasath | Web Developer & Designer</title>
+    <meta name="description" content="Creative web developer and designer portfolio showcasing modern web projects">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <meta property="og:title" content="Alex Carter | Web Developer Portfolio">
+    <meta property="og:description" content="Explore my creative web development projects and designs">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Right-click message -->
+    <div class="right-click-message">Right-click is disabled on this page</div>
+
+    <!-- Header -->
+    <header>
+        <a href="#home" class="logo">MP</a>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1>Mohan Prasath P</h1>
+            <p>Creative Web Developer</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down fa-2x"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-content">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <div style="background: linear-gradient(45deg, #4f46e5, #10b981); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        <i class="fas fa-user"></i>
+
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Hi, I'm Mohan Prasath</h3>
+                    <p>I'm an 18-year-old web developer and designer passionate about creating immersive digital experiences. With a blend of technical skills and creative vision, I build websites that are not only functional but visually stunning.</p>
+                    <p>My journey started when I was 15, tinkering with HTML and CSS. Since then, I've mastered modern frameworks and design principles to craft responsive, performant, and accessible web applications.</p>
+                    <div class="tags">
+                        <div class="tag">Web Development</div>
+                        <div class="tag">UI/UX Design</div>
+                        <div class="tag">3D Animation</div>
+                        <div class="tag">Creative Coding</div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-content">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-grid">
+     </span>           <!-- Project 1 -->
+                <div class="project-card glass">
+                    <div class="project-img">
+                        <div style="background: linear-gradient(45deg, #4338ca, #7c3aed); width: 100%; height: 100%;"></div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Three.js</span>
+                                <span class="project-tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>3D E-Commerce Experience</h3>
+                        <p>Immersive shopping experience with Three.js product visualization and seamless checkout flow.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card glass">
+                    <div class="project-img">
+                        <div style="background: linear-gradient(45deg, #0d9488, #14b8a6); width: 100%; height: 100%;"></div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">D3.js</span>
+                                <span class="project-tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Interactive Data Dashboard</h3>
+                        <p>Real-time analytics dashboard with dynamic visualizations and customizable reporting.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card glass">
+                    <div class="project-img">
+                        <div style="background: linear-gradient(45deg, #b45309, #f59e0b); width: 100%; height: 100%;"></div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">WebXR</span>
+                                <span class="project-tag">Three.js</span>
+                                <span class="project-tag">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AR Portfolio Website</h3>
+                        <p>Augmented reality portfolio using WebXR and Three.js with interactive 3D elements.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-content">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-column">
+                    <h3>Technical Expertise</h3>
+                    <!-- Skill 1 -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>React</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 2 -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Next.js</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 3 -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Three.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 4 -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-column">
+                    <h3>Experience & Education</h3>
+                    <div class="timeline">
+                        <!-- Timeline item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025-2029</div>
+                            <h4 class="timeline-title">B.tech in Computer Science and Engineering(AI and ML)</h4>
+                            <div class="timeline-org">Nxtwave Institute of Advanced Technology(NIAT)</div>
+                            <p>Completed an intensive bootcamp focusing on modern web technologies including React, Node.js
+                        </div>
+
+                        <!-- Timeline item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025</div>
+                            <h4 class="timeline-title">Machine Learning</h4>
+                            <div class="timeline-org">Internshala</div>
+                            <p>Learned core Machine Learning concepts and built real-world models using Python   and Jupyter Notebook.</p>
+                        </div>
+                        
+                        <!-- Timeline item 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023-2024</div>
+                            <h4 class="timeline-title">Full-stack Web Development Certification</h4>
+                            <div class="timeline-org">CSC Computer Education</div>
+                            <p>Advanced full-stack development program with focus on modern frameworks.
+                                Specialized in Front-end development.</p>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-content">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.                        </p>
+                        
+                        <div class="contact-item" style="padding-top: 2rem;">
+                            <div class="contact-icon" >
+                                <i class="fas fa-envelope"></i>
+                            </div >
+                            <div>
+                                <h4>Email</h4>
+                                <p>mohanprasath210607@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>TamilNadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="www.linkedin.com/in/mohanprasath21" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form glass">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Mohan <span>Prasath P</span></div>
+            <p class="footer-text">Creating immersive digital experiences with modern web technologies.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/mohanprasath21"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">© 2025 Mohan Prasath P. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        // Custom Cursor
+const cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+
+// Disable right-click
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+
+  const message = document.querySelector(".right-click-message");
+  message.classList.add("show");
+
+  setTimeout(() => {
+    message.classList.remove("show");
+  }, 3000);
+});
+
+// Add hover effect to links and buttons
+document.querySelectorAll("a, button, .project-card").forEach((element) => {
+  element.addEventListener("mouseenter", () => {
+    cursor.classList.add("hover");
+  });
+
+  element.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+});
+
+// Add text hover effect to navigation links
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    cursor.classList.add("text-hover");
+  });
+
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("text-hover");
+  });
+});
+
+// Theme Toggle
+const themeToggle = document.querySelector(".theme-toggle");
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+
+  // Change icon based on theme
+  const icon = themeToggle.querySelector("i");
+  if (document.body.classList.contains("light-mode")) {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const closeMenu = document.querySelector(".close-menu");
+const nav = document.querySelector("nav");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.add("active");
+  document.body.style.overflow = "hidden";
+});
+
+closeMenu.addEventListener("click", () => {
+  nav.classList.remove("active");
+  document.body.style.overflow = "auto";
+});
+
+// Close menu when clicking on a link
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+    document.body.style.overflow = "auto";
+  });
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+// Three.js Scene
+function initThreeScene() {
+  const canvas = document.getElementById("hero-canvas");
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  );
+
+  const renderer = new THREE.WebGLRenderer({
+    canvas: canvas,
+    alpha: true,
+    antialias: true,
+  });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  // Particles
+  const particlesGeometry = new THREE.BufferGeometry();
+  const particlesCount = 5000;
+
+  const posArray = new Float32Array(particlesCount * 3);
+  const colorArray = new Float32Array(particlesCount * 3);
+
+  for (let i = 0; i < particlesCount * 3; i += 3) {
+    // Position
+    posArray[i] = (Math.random() - 0.5) * 100;
+    posArray[i + 1] = (Math.random() - 0.5) * 100;
+    posArray[i + 2] = (Math.random() - 0.5) * 100;
+
+    // Color
+    colorArray[i] = Math.random();
+    colorArray[i + 1] = Math.random();
+    colorArray[i + 2] = Math.random();
+  }
+
+  particlesGeometry.setAttribute(
+    "position",
+    new THREE.BufferAttribute(posArray, 3)
+  );
+  particlesGeometry.setAttribute(
+    "color",
+    new THREE.BufferAttribute(colorArray, 3)
+  );
+
+  // Material
+  const particlesMaterial = new THREE.PointsMaterial({
+    size: 0.1,
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.8,
+    sizeAttenuation: true,
+  });
+
+  // Points
+  const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+  scene.add(particlesMesh);
+
+  // Torus geometry
+  const torusGeometry = new THREE.TorusGeometry(4, 1, 16, 100);
+  const torusMaterial = new THREE.MeshBasicMaterial({
+    color: 0x6366f1,
+    wireframe: true,
+    transparent: true,
+    opacity: 0.5,
+  });
+  const torus = new THREE.Mesh(torusGeometry, torusMaterial);
+  scene.add(torus);
+
+  // Camera position
+  camera.position.z = 10;
+
+  // Mouse movement
+  let mouseX = 0;
+  let mouseY = 0;
+
+  document.addEventListener("mousemove", (event) => {
+    mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+    mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+  });
+
+  // Animation
+  const clock = new THREE.Clock();
+
+  function animate() {
+    requestAnimationFrame(animate);
+
+    const elapsedTime = clock.getElapsedTime();
+
+    // Rotate torus
+    torus.rotation.x = elapsedTime * 0.2;
+    torus.rotation.y = elapsedTime * 0.2;
+
+    // Move particles
+    const positions = particlesGeometry.attributes.position.array;
+    for (let i = 0; i < particlesCount * 3; i += 3) {
+      positions[i] += Math.sin(elapsedTime + i) * 0.01;
+      positions[i + 1] += Math.cos(elapsedTime + i) * 0.01;
+    }
+    particlesGeometry.attributes.position.needsUpdate = true;
+
+    // Move camera with mouse
+    camera.position.x += (mouseX * 5 - camera.position.x) * 0.05;
+    camera.position.y += (mouseY * 5 - camera.position.y) * 0.05;
+    camera.lookAt(scene.position);
+
+    renderer.render(scene, camera);
+  }
+
+  // Handle window resize
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  animate();
+}
+
+// Initialize Three.js scene
+initThreeScene();
+
+// Form submission
+const contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // Get form values
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // In a real application, you would send this data to a server
+  // For this demo, we'll just show a success message
+  alert(`Thank you, ${name}! Your message has been sent successfully.`);
+  contactForm.reset();
+});
+
+// Add active class to navigation links on scroll
+window.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (scrollY >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").substring(1) === current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+    </script>
+</body>
+</html>
