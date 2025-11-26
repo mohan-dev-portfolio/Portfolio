@@ -6,7 +6,7 @@
   --darker: #020617;
   --light: #f8fafc;
   --gray: #94a3b8;
-  --glass: rgba(255, 255, 255, 0.1);
+  --glass: rgba(255, 255, 255, 0);
   --glass-border: rgba(255, 255, 255, 0.2);
   --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -56,8 +56,8 @@ body.light-mode {
 /* Glassmorphism effect */
 .glass {
   background: var(--glass);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border: 1px solid var(--glass-border);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -358,6 +358,14 @@ section {
   align-items: center;
 }
 
+.hero,
+.about,
+.projects,
+.skills,
+.contact {
+  background: transparent !important;
+}
+
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 3rem;
@@ -561,6 +569,11 @@ section {
 
 .light-mode .project-link:hover {
   color: var(--dark);
+}
+
+.more-projects {
+  text-align: center;
+  margin-top: 3rem;
 }
 
 /* Skills Section */
