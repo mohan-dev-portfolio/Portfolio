@@ -102,7 +102,7 @@ document.addEventListener("contextmenu", (e) => {
 
 // Add hover effect to links and buttons - Desktop Only
 if (cursor && isDesktop()) {
-  document.querySelectorAll("a, button, .project-card, .island-pill").forEach((element) => {
+  document.querySelectorAll("a, button, .project-card, .island-pill, .floating-logo").forEach((element) => {
     element.addEventListener("mouseenter", () => {
       cursor.classList.add("hover");
     });
