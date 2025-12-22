@@ -299,7 +299,7 @@
                 </div>
             </div>
             <div class="more-projects">
-                <a href="projects.html" class="btn btn-secondary">View More Projects</a>
+                <a href="javascript:void(0)" class="btn btn-secondary" onclick="openMaintenanceModal()">View More Projects</a>
             </div>
         </div>
     </section>
@@ -314,6 +314,33 @@
                 <!-- Technical Skills Column -->
                 <div class="skills-column">
                     <h3>Technical Expertise</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML5</span>
+                            <span>98%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 98%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>CSS3</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
                     <div class="skill-item">
                         <div class="skill-header">
                             <span>React</span>
@@ -334,20 +361,29 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-header">
+                            <span>Bootstrap</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Tailwind CSS</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
                             <span>Three.js</span>
                             <span>85%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>JavaScript</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
                         </div>
                     </div>
                 </div>
@@ -420,12 +456,6 @@
                         <a href="https://www.linkedin.com/in/mohanprasath21" class="social-link" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
                     </div>
                 </div>
 
@@ -461,8 +491,6 @@
             <div class="footer-social">
                 <a href="#"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/mohanprasath21" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
             <p class="copyright">© 2025 Mohan Prasath P. All rights reserved.</p>
         </div>
@@ -472,6 +500,37 @@
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Maintenance Modal -->
+    <div class="maintenance-modal" id="maintenanceModal">
+        <div class="maintenance-modal-overlay" onclick="closeMaintenanceModal()"></div>
+        <div class="maintenance-modal-content">
+            <button class="maintenance-modal-close" onclick="closeMaintenanceModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="maintenance-modal-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="maintenance-modal-title">Under Maintenance</h3>
+            <p class="maintenance-modal-text">The Projects section is currently being updated with new and exciting work. Please check back soon!</p>
+            <button class="btn btn-primary" onclick="closeMaintenanceModal()">Got It</button>
+        </div>
+    </div>
+
+    <script>
+        function openMaintenanceModal() {
+            document.getElementById('maintenanceModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMaintenanceModal() {
+            document.getElementById('maintenanceModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeMaintenanceModal();
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
